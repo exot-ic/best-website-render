@@ -33,6 +33,13 @@
             /* Add animation to the color */
             animation: color-fade 3s infinite alternate;
             text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+            display: flex;
+            align-items: center;
+        }
+
+        .top-bar h1 img {
+            margin-right: 10px;
+            height: 30px;
         }
 
         @keyframes color-fade {
@@ -54,6 +61,7 @@
             cursor: pointer;
             font-size: 16px;
             transition: background-color 0.3s ease, color 0.3s ease;
+            text-decoration: none; /* Remove default link styling */
         }
 
         .top-bar-button:hover {
@@ -71,11 +79,12 @@
 <body>
     <div class="top-bar">
         <h1>
-            <img src="/logo.gif" alt="Logo" height="30">
-            Rxiled GMS</h1>
+            <img src="/logo.gif" alt="Logo">
+            Rxiled GMS
+        </h1>
         <div class="top-bar-buttons">
-            <button class="top-bar-button">Pirating links</button>
-            <button class="top-bar-button">Games</button>
+            <a href="https://rxiledcancode.onrender.com/pirating" class="top-bar-button" target="_blank">Pirating links</a>
+            <a href="https://rxiledcancode.onrender.com/games" class="top-bar-button" target="_blank">Games</a>
         </div>
     </div>
     <div class="main-content">
