@@ -1,1 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-image: url('/background.gif');
+            background-repeat: repeat;
+            margin: 0;
+        }
 
+        .top-bar {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+            box-sizing: border-box;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .top-bar h1 {
+            margin: 0;
+            font-size: 24px;
+            /* Add animation to the color */
+            animation: color-fade 3s infinite alternate;
+            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+            display: flex;
+            align-items: center;
+        }
+
+        .top-bar h1 img {
+            margin-right: 10px;
+            height: 30px;
+        }
+
+        @keyframes color-fade {
+            from { color: #0702f7; }
+            to { color: #6e00b8; }
+        }
+
+        .top-bar-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .top-bar-button {
+            background-color: transparent;
+            border: 2px solid white;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            text-decoration: none; /* Remove default link styling */
+        }
+
+        .top-bar-button:hover {
+            background-color: #6e00b8;
+            color: white;
+        }
+
+        .main-content { /* Added a class for the main content div */
+            padding-top: 60px;
+            text-align: center;
+            color: white; /* Center the text */
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <h1>
+            <img src="/logo.gif" alt="Logo">
+            Rxiled GMS
+        </h1>
+        <div class="top-bar-buttons">
+            <a href="https://rxiledcancode.onrender.com/pracy.html" class="top-bar-button" target="_blank">Prating links</a>
+            <a href="https://rxiledcancode.onrender.com/games.html" class="top-bar-button" target="_blank">Games</a>
+        </div>
+    </div>
+    <div class="main-content">
+        <p>games so tuff (get winrar first)</p>
+        <p><a href="https://m.thelmadejager.click/~/uv/hvtrs8%2F-bwzxhgatigr%2Ccmm-uftjreaha1h%7B">shedule 1</a></p>\
+      <p><a href="https://m.thelmadejager.click/~/uv/hvtrs8%2F-bwzxhgatigr%2Ccmm-4kpg0lc7l4xp">there is no game</a></p>
+    </div>
+</body>
+</html>
